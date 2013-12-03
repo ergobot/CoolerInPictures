@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Stuff that is cooler in pictures</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery-loader.js"></script>
+
+<!-- SmartMenus jQuery plugin -->
+<script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+<!-- SmartMenus jQuery init -->
+<script type="text/javascript">
+	$(function() {
+		$('#main-menu').smartmenus({
+			subMenusSubOffsetX: 1,
+			subMenusSubOffsetY: -8,
+			keepInViewport: true
+		});
+	});
+	
+	$(document).ready(function() { 
+		$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+	
+	
+	});
+	//$(window).resize(function () { alert($(window).width()); });
+	//$(document).ready(function() { alert(window).innerwidth); });
+	
+</script>
+
+<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+		
+</script>
+
+
+<!-- SmartMenus core CSS (required) -->
+<link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
+
+<!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+<link href="css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+<link href="css/sm-simple/sm-simple.css" rel="stylesheet" type="text/css" />
+<link href="css/sm-clean/sm-clean.css" rel="stylesheet" type="text/css" />
+
+<!-- #main-menu config - instance specific stuff not covered in the theme -->
+<style type="text/css">
+
+	#main-menu {
+		position:relative;
+		z-index:9999;
+		width:auto;
+	}
+	#main-menu ul {
+		width:12em; /* fixed width only please - you can use the "subMenusMinWidth"/"subMenusMaxWidth" script options to override this if you like */
+	}
+	
+</style>
+
+<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: helvetica, arial;
+			padding-top: 40px;
+		}
+		.columns {
+	overflow:hidden;
+	margin-top: 6.5625em;  
+	margin-bottom: 6.5625em;
+}
+.left-column {
+	float:left;
+	width:50%;
+	background-repeat: no-repeat;
+}
+.right-column {
+	float:right;
+	width:50%;
+}
+#content {
+	margin:0 24px;
+}
+#content p a {
+	word-wrap:break-word;
+}
+		h1 {
+			background-color: black;
+			color: white;
+			height: 40px;
+			font-size: 24px;
+			font-weight: normal;
+			left: 0;
+			line-height: 40px;
+			text-align: center;
+			top: 0;
+			width: 100%;
+			z-index: 9999;
+		}
+		h1 a {
+			border-bottom: 1px solid white;
+			color: white;
+			display: inline-block;
+			line-height: 30px;
+			text-decoration: none;
+		}
+		#main-menu{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		.photo {
+			background-attachment: fixed;
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+			height: 450px;
+			position: relative;
+			width: 100%;
+		}
+		.photo span {
+			bottom: 45%;
+			color: white;
+			display: block;
+			left: 50%;
+			margin-left: 240px;
+			font-size: 38px;
+			padding: 10px;
+			position: absolute;
+			text-shadow: 0 2px 0 black, 0 0 10px black;
+			width: 1280px;
+		}
+		.volcano {
+			background-image: url(images/volcanolarge.jpg);
+			background-size: 100%;
+		}
+		.space {
+			background-image: url(images/spacelarge.jpg);
+		}
+		.robot {
+			background-image: url(images/robotslarge.jpg);
+				background-size: 100% 100%;
+		}
+		.spring {
+			background-image: url(images/spring.jpg);
+		}
+		.detailmessage{
+		
+		}
+		@media only screen and (min-width: 500px)
+		{	
+			.columns{
+			left: 50%;
+			}
+		
+			.left-column{
+				height: 200px;
+				width: 700px;
+				float: none;
+				margin: auto;
+			}
+			.right-column{
+				float: none;
+				margin: auto;
+			}
+			.content-header{
+				text-align: center
+			}
+			.content-details{
+				text-align: center;
+			}
+			
+		}
+		@media only screen and (min-width: 1300px){
+			.columns{
+				left: 50%;
+			}
+			
+			.left-column
+			{
+				height: 200px;
+				width: 650px;
+				float: left;
+				margin: auto;
+			}
+			.right-column
+			{
+				float: right;
+				margin: auto;
+			}
+			.content-header{
+				text-align: left;
+			}
+			.content-details{
+				text-align: left;
+			}
+			
+		}
+		
+		
+		
+		</style>
+
+
+<!-- YOU DO NOT NEED THIS - demo page content styles -->
+
+
+
+
+</head>
+
+<body id="body">
+
+
+
+<!-- Sample menu definition -->
+<ul id="main-menu" class="sm sm-simple">
+  <li><a id="volcanoesMenuButton" href="#volcanoes">Volcanoes</a></li>
+  <li><a id="spaceMenuButton" href="#space">Space</a></li>
+  <li><a id="robotMenuButton" href="#robots">Robots</a></li>
+</ul>
+<h1>Stuff that is cooler in pictures</h1>
+
+
+<div id="volcanoes" class="photo volcano" id="volcanoId"data-stellar-background-ratio=".025" style="background-position: 50% -922.5px;"><h3 style="margin-top: 115px;">
+                <span>Volcanoes</span>
+              </h3></div>
+<div class="columns"> 
+<div class="left-column" style="background-image: url(images/volcanosmall2.jpg);height: 300px;background-position: 50%;">
+</div>
+<div class="right-column">
+<div class="content-header" style="font-family:Garamond;font-size:48px;font-style:normal;font-weight:bold;text-align:center;text-decoration:none;text-transform:none;color:000000;">Hotter than it looks.</div>
+<div class="content-details" style="font-family:sans-serif;font-size:24px;font-style:normal;font-weight:normal;text-align:center;text-decoration:none;text-transform:none;color:000000;">"If you ever drop your keys into a river of molten lava, let 'em go, because man, they're gone."</br>- Jack Handy</div>
+</div>
+
+</div>
+<div id="space" class="photo space" data-stellar-background-ratio=".025" style="background-position: 50% -697.5px;"><span>Space</span></div>
+<div class="columns"> 
+<div class="left-column" style="background-image: url(images/spacesmall.jpg);"></div>
+<div class="right-column">
+<div class="content-header" style="font-family:Garamond;font-size:48px;font-style:normal;font-weight:bold;text-decoration:none;text-transform:none;color:000000;">The Universe is big.</div>
+<div class="content-details" style="font-family:sans-serif;font-size:24px;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;color:000000;">If space is infinite, there's a whole lot of nothing out there but it doesn't stop humanity from daydreaming about something out there.</div>
+</div>
+
+</div>
+
+<div id="robots" class="photo robot" data-stellar-background-ratio=".025" style="background-position: 50% -697.5px;"><span>Robots</span></div>
+<div class="columns"> 
+<div class="left-column" style="background-image: url(images/robotsmall2.jpg);background-size: 50% 100%;background-position: 50%;"></div>
+<div class="right-column">
+<div class="content-header" style="font-family:Garamond;font-size:48px;font-style:normal;font-weight:bold;text-decoration:none;text-transform:none;color:000000;">Engineering marvels.</div>
+<div class="content-details" style="font-family:sans-serif;font-size:24px;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;color:000000;">It's all harmless help until they wreck your home, chase you through the galaxy, and try to destroy your entire species.</div>
+</div>
+
+</div>
+
+
+
+
+<!-- =============================================================================== -->
+<!-- ================= YOU DO NOT NEED ANYTHING AFTER THIS COMMENT ================= -->
+<!-- =============================================================================== -->
+
+
+
+
+
+</body>
+</html>
